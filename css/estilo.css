@@ -1,0 +1,107 @@
+/* Utilizando as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(180deg, #d8feef, #befae2);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    box-sizing: border-box;
+    width: 25vw;
+    height: 60vh;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sedans {
+    background-color: #E28525;
+    border-radius: 10px 0 0 10px;
+}
+
+#suvs {
+    background-color: #016972;
+}
+
+#luxury {
+    background-color: #00403F;
+    border-radius: 0 10px 10px 0;
+}
+
+article>img {
+    width: 70px;
+}
+
+article>h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+#sedans .learn-more{
+    color: #E28525;
+}
+
+#suvs .learn-more{
+    color: #016972;
+}
+
+#luxury .learn-more{
+    color: #00403F;
+}
+
+.learn-more {
+    background-color: rgba(255, 255, 255, 1);
+    color: #00403F;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+#sedans .learn-more:hover, #suvs .learn-more:hover, #luxury .learn-more:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+
+
+/* Utilizando media para CSS em celulares e tablets */
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    article {
+        width: 85vw;
+        height: 50vh;
+        padding: 40px 50px;
+    }
+
+    #sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
